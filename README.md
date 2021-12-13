@@ -1,6 +1,6 @@
 # Dotfiles of Siddhant Maitra
 
-Minimal settings dotfiles I created while working on linux environment.
+Minimal settings dotfiles I created while using linux.
 
 Managed using GNU Stow and git. 
 
