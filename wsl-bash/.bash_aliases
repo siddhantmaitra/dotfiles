@@ -1,5 +1,4 @@
 #Default path
-#cd /mnt/c/Users/sid/Documents/CODE/
 
 # Windows exe aliases
 alias java=java.exe
