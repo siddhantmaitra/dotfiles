@@ -5,3 +5,5 @@
 	defaultBranch = main
 [credential]
 	helper = cache
+[core]
+	editor = vim

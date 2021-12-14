@@ -13,10 +13,8 @@ Managed using GNU Stow and git.
 ├── kittyconf
 │   └── .config
 │       └── kitty
-│           ├── challenger-deep.conf
 │           ├── kitty.conf
-│           ├── ogkitty.conf
-│           └── onehalf-dark.conf
+│           └── ogkitty.conf
 ├── neovim
 │   └── .config
 │       └── nvim
@@ -27,7 +25,5 @@ Managed using GNU Stow and git.
 └── wsl-vim
     └── .vimrc
 
-9 directories, 9 files
-
+9 directories, 7 files
 ```
-
