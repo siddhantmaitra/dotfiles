@@ -23,7 +23,7 @@ set number relativenumber
 "highlight clear cursorline
 "highlight clear CursorLineNR 
 "highlight CursorLineNR ctermbg=blue
-
+set clipboard=unnamedplus
 "Mouse use
 set mouse=a
 
