@@ -2,7 +2,10 @@
 call plug#begin('~/.vim/plugged')
     Plug 'itchyny/lightline.vim'              " Lightline statusbar
 	Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }				
-	Plug 'morhetz/gruvbox'
+"	Plug 'morhetz/gruvbox'
+"	Plug 'fratajczak/one-monokai-vim'
+"	Plug 'crusoexia/vim-monokai'
+"	Plug 'KeitaNakamura/neodark.vim'
 call plug#end()
 
 "SETTINGS
@@ -11,14 +14,15 @@ syntax on
 
 "Color scheme
 colo challenger_deep
-colo gruvbox
+"colo gruvbox
 let g:lightline = { 'colorscheme': 'wombat'}
+set termguicolors
 
 "LoC
-set number
+set nu rnu 
 set cursorline
 highlight clear cursorline
-"highlight clear CursorLineNR 
+highlight clear CursorLineNR 
 "highlight CursorLineNR ctermbg=blue
 
 "Mouse use
