@@ -2,7 +2,8 @@
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 	Plug 'itchyny/lightline.vim'              " Lightline statusbar
 	Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }				
-	"Plug 'morhetz/gruvbox'
+	"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'morhetz/gruvbox'
 	"Plug 'fratajczak/one-monokai-vim'
 
 call plug#end()
@@ -12,14 +13,14 @@ call plug#end()
 syntax on
 
 "Color scheme
-colo challenger_deep
-"colo gruvbox
-let g:lightline = { 'colorscheme': 'wombat'}
-set termguicolors
+"colo challenger_deep
+colo gruvbox
+let g:lightline={ 'colorscheme':'wombat'}
+"set termguicolors
 
 "LoC
-set number relativenumber
-"set cursorline
+set number 
+set cursorline
 "highlight clear cursorline
 "highlight clear CursorLineNR 
 "highlight CursorLineNR ctermbg=blue
@@ -46,7 +47,7 @@ set t_vb=
 
 "Other 
 set noswapfile
-set laststatus=2
+"set laststatus=2
 set noshowmode
 
 "REMAPS
