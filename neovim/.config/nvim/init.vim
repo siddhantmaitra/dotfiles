@@ -1,11 +1,10 @@
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 	Plug 'itchyny/lightline.vim'              " Lightline statusbar
-	Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }				
-	"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'morhetz/gruvbox'
-	"Plug 'fratajczak/one-monokai-vim'
-
+	Plug 'fratajczak/one-monokai-vim'
+	Plug 'neovim/nvim-lspconfig'
+	Plug 'williamboman/nvim-lsp-installer'
 call plug#end()
 
 "SETTINGS
@@ -13,10 +12,9 @@ call plug#end()
 syntax on
 
 "Color scheme
-"colo challenger_deep
-colo gruvbox
+colo one-monokai
 let g:lightline={ 'colorscheme':'wombat'}
-"set termguicolors
+set termguicolors
 
 "LoC
 set number 
@@ -47,7 +45,7 @@ set t_vb=
 
 "Other 
 set noswapfile
-"set laststatus=2
+set laststatus=2
 set noshowmode
 
 "REMAPS
