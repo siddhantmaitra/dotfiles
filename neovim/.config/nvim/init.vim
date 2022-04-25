@@ -11,8 +11,9 @@ call plug#end()
 
 syntax on
 
-"Color scheme
+"Theme
 colo one-monokai
+colo "gruvbox
 let g:lightline={ 'colorscheme':'wombat'}
 set termguicolors
 
@@ -22,11 +23,12 @@ set cursorline
 "highlight clear cursorline
 "highlight clear CursorLineNR 
 "highlight CursorLineNR ctermbg=blue
+
+"Clipboard
 set clipboard=unnamedplus
+
 "Mouse use
 set mouse=a
-
-"set clipboard=unamedplus
 
 "Encoding
 set encoding=utf-8
@@ -50,6 +52,3 @@ set noshowmode
 
 "REMAPS
 nnoremap <C-N> :Texplore<CR>
-
-
-
