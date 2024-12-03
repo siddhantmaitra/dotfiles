@@ -3,9 +3,9 @@
 #
 
 autoload -U colors && colors
-#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
-PS1='[%F{green}%n@%m %F{blue}%~%F{green}%f] $ '
+#PS1='[%F{green}%n@%m %F{blue}%~%F{green}%f] $ '
 
 # History in cache directory:
 HISTSIZE=10000               #How many lines of history to keep in memory
@@ -76,27 +76,23 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_STATE_HOME=$HOME/.local/state
 
-## GOPATH
-export GOPATH="$XDG_DATA_HOME"/go
-
-
 #------------------------------------------------------------
 ## Evals 
 #------------------------------------------------------------
 eval "$(direnv hook zsh)"
 eval "$(fnm env --use-on-cd)"
-
+eval "$(zoxide init zsh)"
 #------------------------------------------------------------
 ## Functions 
 #------------------------------------------------------------
-function fd() {
-    git add -A
-    git commit -m $1
-    git push
-}
-
 function fds() {
+    if [[ "$1" == "-d" ]]; then
+        local date_str=$(date)
+        local msg="fastcommit: $date_str"
+    else
+        local msg=${1:-"fastcommit"}
+    fi
     git add -A
-    git commit -m "fastcommit"
+    git commit -m "$msg"
     git push
 }
