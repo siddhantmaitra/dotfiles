@@ -79,8 +79,8 @@ export XDG_STATE_HOME=$HOME/.local/state
 #------------------------------------------------------------
 ## Evals 
 #------------------------------------------------------------
-eval "$(direnv hook zsh)"
-eval "$(fnm env --use-on-cd)"
+#eval "$(direnv hook zsh)"
+#eval "$(fnm env --use-on-cd)"
 eval "$(zoxide init zsh)"
 #------------------------------------------------------------
 ## Functions 
